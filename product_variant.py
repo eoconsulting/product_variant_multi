@@ -57,7 +57,7 @@ class product_variant_dimension_type(osv.osv):
     _order = "sequence, name"
 
     def name_search(self, cr, user, name='', args=None, operator='ilike', context=None, limit=None):
-        if context.get('product_tmpl_id', False):
+        if context and context.get('product_tmpl_id', False):
             return super(product_variant_dimension_type, self).name_search(cr, user, '', args, 'ilike', None, None)
         else:
             return super(product_variant_dimension_type, self).name_search(cr, user, '', None, 'ilike', None, None)
