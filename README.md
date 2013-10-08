@@ -1,6 +1,9 @@
 Products with multi-level variants
 ==================================
 
+**This project has been moved to https://launchpad.net/zoook-esale**
+
+
 OpenERP is already supporting a product variants at the core level. But
 without this module, variants are only mono-axial. OpenERP indeed uses the product.template
 as the model object and the product.variant as the instance variant.
